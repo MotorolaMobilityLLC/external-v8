@@ -653,4 +653,11 @@ cc_library_static {
     ],
     generated_headers: ["v8_torque_file"],
     generated_sources: ["v8_torque_file_cc"],
+    sanitize: {
+        cfi: true,
+        diag: {
+            cfi: true,
+        },
+        blacklist: "./tools/cfi/blacklist.txt",
+    },
 }
