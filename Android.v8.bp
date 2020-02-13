@@ -653,8 +653,9 @@ cc_library_static {
     ],
     generated_headers: ["v8_torque_file"],
     generated_sources: ["v8_torque_file_cc"],
-    sanitize: {
-        cfi: true,
-        blacklist: "./tools/cfi/blacklist.txt",
-    },
+    // Re-enable when b/145990493 is fixed
+    // sanitize: {
+    //     cfi: true,
+    //     blacklist: "./tools/cfi/blacklist.txt",
+    // },
 }
