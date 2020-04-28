@@ -657,4 +657,9 @@ cc_library_static {
         cfi: true,
         blacklist: "./tools/cfi/blacklist.txt",
     },
+
+    apex_available: [
+        "com.android.art.debug",
+        "com.android.art.release",
+    ],
 }
